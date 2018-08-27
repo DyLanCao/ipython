@@ -3,7 +3,7 @@
 
 import argparse
 from iAudioPlg.version import __version__
-#from pythong.command import label, pin, wash
+from iAudioPlg.command import *
 #from pythong.project import prompt_classifiers, prompt_new_project
 
 
@@ -24,6 +24,7 @@ def parse_command():
     args = p.parse_args()
     if args.label:
 	print("test1")
+	wavread()
         #label(prompt_classifiers())
     elif args.pin:
         #pin(args.pin)
