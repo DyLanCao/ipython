@@ -4,12 +4,13 @@ import h5py
 import numpy as np
 
 #HDF5的写入：
-imgData = np.zeros((2,10))
+imgData1 = np.zeros((1,50))
+imgData2 = np.zeros((1,50))
 f = h5py.File('Land.h5','w')   #创建一个h5文件，文件指针是f
-f['forest'] = imgData                 #将数据写入文件的主键data下面
-f['labels'] = np.array([1,2,3,4,5,6,7,8,9,10])            #将数据写入文件的主键labels下面
-f['urban'] = imgData                 #将数据写入文件的主键data下面
-f['labels'] = np.array([1,2,3,4,5,6,7,8,9,10])            #将数据写入文件的主键labels下面
+f['forest'] = imgData1                 #将数据写入文件的主键data下面
+#f['labels'] = np.array([1,2,3,4,5,6,7,8,9,10])            #将数据写入文件的主键labels下面
+f['urban'] = imgData2                 #将数据写入文件的主键data下面
+#f['labels'] = np.array([1,2,3,4,5,6,7,8,9,10])            #将数据写入文件的主键labels下面
 f.close()                           #关闭文件
 
 def loadDataSet():
@@ -19,8 +20,9 @@ def loadDataSet():
     pictureSet=[];pictureClasses=[]
     with h5py.File('Land.h5') as h5f:
         forest=h5f['forest'][:]
-        #urban=h5f['urban'][:]
-        #pictureSet=np.vstack((forest,urban))
+	print(forest)
+        urban=h5f['urban'][:]
+        pictureSet=np.vstack((forest,urban))
         pictureClasses=[0]*50+[1]*50
     return pictureSet,pictureClasses
 
