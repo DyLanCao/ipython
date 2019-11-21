@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+INPUT {font-size:20px};
+TEXTAREA{font-size:20px};
+Button {font-size :20px};
+</style>
+<meta name="viewport" content="width=320px, user-scalable=no, initial-scale=1, maximum-scale=1">
+<title>8266设置</title>
+</head>
+<body>
+<form action="set.php" method="post" enctype="application/x-www-form-urlencoded">
+  <table width="0" border="0">
+  <tr>
+    <td> AP SSID：</td>
+    <td><input name="SSID" type="text" /></td>
+  </tr>
+  <tr>
+    <td>AP Password:</td>
+    <td><input name="password" type="password" /></td>
+  </tr>
+  <tr>
+    <td>--------------</td>
+  </tr>
+  <tr>
+    <td>路由器（ssid）:</td>
+    <td><input name="AP_ssid" type="text" /></td>
+  </tr>
+  <tr>
+    <td>路由器密码(password):</td>
+    <td><input name="AP_pwd" type="text" /></td>
+  </tr>
+  <tr>
+    <td>--------------</td>
+  </tr>
+  <tr>
+    <td>服务器端口:</td>
+    <td><input name="Server_port" type="number" /></td>
+  </tr>
+  <tr>
+    <td>服务器IP地址:</td>
+    <td><input name="Server_IP" type="text" /></td>
+  </tr>
+</table>
+<input name="submitOK" type="submit" value="submit" />
+</form>
+</body>
+
+
