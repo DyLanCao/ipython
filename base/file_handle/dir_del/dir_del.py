@@ -22,7 +22,7 @@ def del_files(path):
 def del_file(path):
     lsdir = os.listdir(path)
     print(lsdir)
-    if any(name.endswitch('.py') for name in lsdir):
+    if any(name.endswith('.py') for name in lsdir):
         print("no txt in this dir")
     else:
         print("have txt and need to remove")
