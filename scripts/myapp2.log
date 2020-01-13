@@ -22,3 +22,9 @@ Sat, 27 Jul 2019 17:00:54 log_test1.py[line:23] CRITICAL Host www.python.org unk
 Sat, 27 Jul 2019 17:00:54 log_test1.py[line:24] ERROR Couldn't find 'spam'
 Sat, 27 Jul 2019 17:01:50 log_test1.py[line:23] CRITICAL Host www.python.org unknown
 Sat, 27 Jul 2019 17:01:50 log_test1.py[line:24] ERROR Couldn't find 'spam'
+Sat, 27 Jul 2019 17:02:47 log_test1.py[line:23] CRITICAL Host www.python.org unknown
+Sat, 27 Jul 2019 17:02:47 log_test1.py[line:24] ERROR Couldn't find 'spam'
+Sat, 27 Jul 2019 17:03:46 log_test1.py[line:23] CRITICAL Host www.python.org unknown
+Sat, 27 Jul 2019 17:03:46 log_test1.py[line:24] ERROR Couldn't find 'spam'
+Sat, 27 Jul 2019 17:07:08 log_test1.py[line:23] CRITICAL Host www.python.org unknown
+Sat, 27 Jul 2019 17:07:08 log_test1.py[line:24] ERROR Couldn't find 'spam'

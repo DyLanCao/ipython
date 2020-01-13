@@ -11,7 +11,7 @@ def main():
 	format='%(levelname)s:%(asctime)s:%(message)s')
 	'''
 	logging.config.fileConfig('config/config.ini')
-	logging.getLogger("root")
+	logging.getLogger("example02")
 
 	#variables 
 	hostname = 'www.python.org'
