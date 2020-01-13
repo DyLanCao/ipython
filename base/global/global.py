@@ -7,12 +7,12 @@ def test1():
 	print('test1 global val:',val)
 
 def test2():
-	val = 8
-	print('test2 global val:',val)
+    val = 8
+    print('test2 global val:',val)
 class Test():
 	def __init__(self):
 		#global val
-		val = 5
+		val = 1
 		test1()
 		test2()
 	def connect(self):

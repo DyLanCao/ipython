@@ -1,0 +1,10 @@
+
+import gdb 
+class HelloPrefixCommand( gdb.Command ):
+    "just to say hello"
+ 
+    def __init__(self):
+        super( HelloPrefixCommand, self).__init__("hello",
+                gdb.COMMAND_SUPPORT,
+                gdb.COMPLETE_NONE, True )
+HelloPrefixCommand()

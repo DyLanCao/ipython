@@ -1,5 +1,5 @@
 
-#!/usr/bin/env python3
+#!usr/bin/env python3
 n = int(input("Enter the number of students:"))
 data = {} # here we will store the data
 languages = ('Physics', 'Maths', 'History') #all languages
