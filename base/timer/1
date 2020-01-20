@@ -1,0 +1,11 @@
+import timer
+import logging
+
+logging.basicConfig(filename='example.log',level=logging.DEBUG)
+
+def hello():
+    logging.debug("test timer")
+
+
+t = Timer(5,hello)
+t.start()
