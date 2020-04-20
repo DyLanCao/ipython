@@ -1,0 +1,18 @@
+from pytlv.TLV import *
+import json
+
+data = {"username":"dylan","age":16}
+jsondata = json.dumps(data)
+
+tlv = TLV(['12345678', '9F04'])
+data = tlv.build({'12345678': '30001111111111111111222222222222222222222222223333333333'})
+print(data)
+text = tlv.parse(data)
+print(text)
+
+test1 = 'Ab0000'
+print(len(test1))
+data1 = tlv.build({'9f04': test1 + jsondata})
+print(data1)
+text1 = tlv.parse(data1)
+print(text1)

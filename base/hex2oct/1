@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+
+aa='\xa5\x5a'
+print(oct(aa.encode()))

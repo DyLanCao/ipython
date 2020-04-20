@@ -12,7 +12,7 @@ def recv(serial):
     return data
 
 if __name__ == '__main__':
-    serial = serial.Serial('/dev/ttyUSB1', 115200, timeout=0.5)  #/dev/ttyUSB0
+    serial = serial.Serial('/dev/ttyUSB0', 115200, timeout=0.5)  #/dev/ttyUSB0
     if serial.isOpen() :
         print("open success")
     else :
@@ -21,9 +21,25 @@ if __name__ == '__main__':
     number = 0
 
     while True:
-        data="ssid:vision passwd:12345678 dns:127.0.0.1 port:127.0.0.1 server_addr:www.baidu.com"
         number = number + 1
         print("number is:" + str(number))
+        if number == 1:
+            data="ssid:vision"
+        elif number == 2:
+            data="passwd:12345678"
+        elif number == 3:
+            data="port:3333"
+        elif number == 4:
+            data="tcpip:1"
+        elif number == 5:
+            data = "ipv4:127.0.0.1"
+        elif number == 6:
+            data = "server_addr:www.baidu.com"
+        elif number == 7:
+            data = "state_get"
+        else:
+            data="mac_addr:11:22:33:44:55:66"
+
         print("write:"+ data)
         sleep(2)
         serial.write(data.encode("gbk")) #数据写回
