@@ -13,7 +13,7 @@ def recv(serial):
     return data
 
 if __name__ == '__main__':
-    serial = serial.Serial('/dev/ttyUSB0', 115200, timeout=0.5)  #/dev/ttyUSB0
+    serial = serial.Serial('/dev/ttyUSB3', 115200, timeout=0.5)  #/dev/ttyUSB0
     if serial.isOpen() :
         print("open success")
     else :
@@ -31,7 +31,7 @@ if __name__ == '__main__':
             '''
 
         j = {
-                "ssid":"iddzz-bms","password":"iddzz1277","server_port":3000,"brate":115200,"dns":"8.8.8.8","server_addr":"192.168.43.205","state_get":1
+                "ssid":"vision","password":"13916953196","server_port":3000,"brate":115200,"dns":"8.8.8.8","server_addr":"39.98.134.152","state_get":1
             }
         data = json.dumps(j)
         

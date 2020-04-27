@@ -1,5 +1,6 @@
 import serial
 from time import sleep
+import json
 
 def recv(serial):
     while True:
@@ -21,13 +22,18 @@ if __name__ == '__main__':
     number = 0
 
     while True:
-        data="this is data send from uart to network......................."
         number = number + 1
         print("number is:" + str(number))
+        j = {
+                "socket":1
+            }
+
+        data = json.dumps(j)
+
         print("write:"+ data)
         sleep(2)
         serial.write(data.encode("gbk")) #数据写回
-        sleep(1)
+        #sleep(1)
         rx_data = recv(serial)
         if rx_data != b'':
             print("read:" + str(rx_data))
