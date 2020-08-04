@@ -1,6 +1,5 @@
 import serial
 from time import sleep
-import json
 
 def recv(serial):
     while True:
@@ -13,7 +12,7 @@ def recv(serial):
     return data
 
 if __name__ == '__main__':
-    serial = serial.Serial('/dev/ttyUSB0', 115200, timeout=0.5)  #/dev/ttyUSB0
+    serial = serial.Serial('/dev/ttyUSB4', 115200, timeout=0.5)  #/dev/ttyUSB0
     if serial.isOpen() :
         print("open success")
     else :
@@ -22,19 +21,14 @@ if __name__ == '__main__':
     number = 0
 
     while True:
+        #data="this is data send from uart to network......................."
+        #data=0x555555555555555555555555555555555
         number = number + 1
-        print("number is:" + str(number))
-        j = {
-                "state_get":1
-            }
-
-        data = json.dumps(j)
-
-        print("write:"+ data)
-        sleep(2)
-        serial.write(data.encode("gbk")) #数据写回
-        #sleep(1)
-        rx_data = recv(serial)
+        #print("write:"+ data)
+        #sleep(2)
+        #serial.write(data.encode("gbk")) #数据写回
+        sleep(0.02)
+        rx_data = recv(serial).hex()
         if rx_data != b'':
-            print("read:" + str(rx_data))
+            print("read:" + rx_data)
 

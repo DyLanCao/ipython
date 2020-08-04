@@ -1,92 +1,0 @@
-rlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜälpònnäÄ;ònÄ’Üäbã$	rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäÇŒbÀÄ>~ònîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀà’œÜl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜÀpp’Ü<ÄÄ8ŒònnîÄÁŒl`nÜÄÃŒrnr’ß;ÄÀœŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜ€àrÇâÜÄpp’Ü<ÄÇlÛŒpŒònnîÄÁŒl`Ü#‚nÀ;nr’ß;ÄÀ?ŒìrrßÛ’nÀàbÇÇìI (52) boot: ESP-IDF v3.2-220-ga59b346a-dirty 2nd stage bootloader
-[2019-11-11 16:28:23] I (52) boot: compile time 15:17:47
-[2019-11-11 16:28:23] I (54) qio_mode: Enabling default flash chip QIO
-[2019-11-11 16:28:23] I (58) boot: SPI Speed      : 40MHz
-[2019-11-11 16:28:23] I (62) boot: SPI Mode       : QIO
-[2019-11-11 16:28:23] I (66) boot: SPI Flash Size : 2MB
-[2019-11-11 16:28:23] I (70) boot: Partition Table:
-[2019-11-11 16:28:23] I (74) boot: ## Label            Usage          Type ST Offset   Length
-[2019-11-11 16:28:23] I (81) boot:  0 nvs              WiFi data        01 02 00009000 00006000
-[2019-11-11 16:28:23] I (88) boot:  1 phy_init         RF data          01 01 0000f000 00001000
-[2019-11-11 16:28:23] I (96) boot:  2 factory          factory app      00 00 00010000 000f0000
-[2019-11-11 16:28:23] I (103) boot: End of partition table
-[2019-11-11 16:28:23] I (108) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x3ec20 (257056) map
-[2019-11-11 16:28:23] I (203) esp_image: segment 1: paddr=0x0004ec38 vaddr=0x4024ec30 size=0x07450 ( 29776) map
-[2019-11-11 16:28:23] I (213) esp_image: segment 2: paddr=0x00056090 vaddr=0x3ffe8000 size=0x0058c (  1420) load
-[2019-11-11 16:28:23] I (214) esp_image: segment 3: paddr=0x00056624 vaddr=0x40100000 size=0x00a30 (  2608) load
-[2019-11-11 16:28:23] I (221) esp_image: segment 4: paddr=0x0005705c vaddr=0x40100a30 size=0x05610 ( 22032) load
-[2019-11-11 16:28:23] I (236) boot: Loaded app from partition at offset 0x10000
-[2019-11-11 16:28:23] I (257) system_api: Base MAC address is not set, read default base MAC address from EFUSE
-[2019-11-11 16:28:23] I (254) system_api: Base MAC address is not set, read default base MAC address from EFUSE
-[2019-11-11 16:28:23] phy_version: 1153.0, 0398f21, Oct 24 2019, 20:29:07, RTOS new
-[2019-11-11 16:28:23] I (311) phy_init: phy ver: 1153_0
-[2019-11-11 16:28:23] I (315) reset_reason: RTC reset 1 wakeup 0 store 0, reason is 1
-[2019-11-11 16:28:23] I (333) example: Setting WiFi configuration SSID vision...
-[2019-11-11 16:28:23] I (338) example: Waiting for AP connection...
-[2019-11-11 16:28:23] uart echo task process start 
-[2019-11-11 16:28:23]  I (345) example: SYSTEM_EVENT_STA_START
-[2019-11-11 16:28:25] I (2579) wifi: state: 0 -> 2 (b0)
-[2019-11-11 16:28:25] recv data len:10 data is::ssss hellowáb'Üúai´”]øŞ’q¶¤,"™™Kù‹9‘¹í+a‹ù+"òU6·9ŒN–¬©Ú<8sÕÎ‹eò éXè1¯y“}Ì>ØíŒš·r@±P“F{ ŸˆóÃ¥¡ ÜƒLú4»?şşš¥U=z¾Š[§ºŒ“ƒÙú…1)fÛ)à¼
-[2019-11-11 16:28:25] Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
-[2019-11-11 16:28:25] Core 0 register dump:
-[2019-11-11 16:28:25] PC      : 0x40221e92  PS      : 0x00000033  A0      : 0x40221e8f  A1      : 0x3ffecd50  
-[2019-11-11 16:28:25] A2      : 0x00000001  A3      : 0x3ffea644  A4      : 0xffffffff  A5      : 0x00000000  
-[2019-11-11 16:28:25] A6      : 0x00000000  A7      : 0x00000000  A8      : 0x3ffeccd9  A9      : 0x000000a0  
-[2019-11-11 16:28:25] A10     : 0x00000000  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x00000000  
-[2019-11-11 16:28:25] A14     : 0x00000000  A15     : 0x4010836c  SAR     : 0x00000016  EXCCAUSE: 0x0000001c  
-[2019-11-11 16:28:25] 
-[2019-11-11 16:28:25] Backtrace: 0x40221e92:0x3ffecd50 0x4022cd6e:0x3ffecd90 0x4022cd2b:0x3ffecda0 
-[2019-11-11 16:28:25] Guru Meditation Error: Core  0 panic'ed (InstructionFetchError). Exception was unhandled.
-[2019-11-11 16:28:25] Core 0 register dump:
-[2019-11-11 16:28:25] PC      : 0x3ffe8840  PS      : 0x00000033  A0      : 0x3ffe8840  A1      : 0x3ffea820  
-[2019-11-11 16:28:25] A2      : 0xffffffff  A3      : 0x00000001  A4      : 0x00000017  A5      : 0x00000002  
-[2019-11-11 16:28:25] A6      : 0x00000000  A7      : 0x3ffe855c  A8      : 0x00000017  A9      : 0x000000a0  
-[2019-11-11 16:28:25] A10     : 0x3ffe854f  A11     : 0x0000006d  A12     : 0x00000100  A13     : 0x3ffee710  
-[2019-11-11 16:28:25] A14     : 0x3ffe8550  A15     : 0x40105908  SAR     : 0x0000001d  EXCCAUSE: 0x00000002  
-[2019-11-11 16:28:25] 
-[2019-11-11 16:28:25] Backtrace: 0x3ffe8840:0x3ffea820 ørlœØrßŒ#ânÀàŒ‚ìpŒ<‚ßì8’ßÇ’ÜälpònnäÄ;ònÄ’Üäbã$‰rrpònàÃÜà‚ÇÀl€€€bÀnâãnÀäÇŒbÀÄ>~ònîÄÁŒl`Ü#‚nÀ$Œl`¸`rn|’’nÀà’ÜÜl`¹~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜ€àrÇâÜÀpp’Ü<ÄÄ8ŒònnîÄÁŒl`nÜÄÃŒrnr’ß;ÄÀœŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜ€àrÇâÜÄpp’Ü<ÄÇlÛŒpŒònnîÄÁŒl`Ü#‚nÀ;nr’ß;ÄÀ?ŒìrrßÛ’nÀàbÇÇìI (52) boot: ESP-IDF v3.2-220-ga59b346a-dirty 2nd stage bootloader
-[2019-11-11 16:28:25] I (52) boot: compile time 15:17:47
-[2019-11-11 16:28:25] I (54) qio_mode: Enabling default flash chip QIO
-[2019-11-11 16:28:25] I (58) boot: SPI Speed      : 40MHz
-[2019-11-11 16:28:25] I (62) boot: SPI Mode       : QIO
-[2019-11-11 16:28:25] I (66) boot: SPI Flash Size : 2MB
-[2019-11-11 16:28:25] I (70) boot: Partition Table:
-[2019-11-11 16:28:25] I (74) boot: ## Label            Usage          Type ST Offset   Length
-[2019-11-11 16:28:25] I (81) boot:  0 nvs              WiFi data        01 02 00009000 00006000
-[2019-11-11 16:28:25] I (88) boot:  1 phy_init         RF data          01 01 0000f000 00001000
-[2019-11-11 16:28:25] I (96) boot:  2 factory          factory app      00 00 00010000 000f0000
-[2019-11-11 16:28:25] I (103) boot: End of partition table
-[2019-11-11 16:28:25] I (108) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x3ec20 (257056) map
-[2019-11-11 16:28:25] I (203) esp_image: segment 1: paddr=0x0004ec38 vaddr=0x4024ec30 size=0x07450 ( 29776) map
-[2019-11-11 16:28:25] I (213) esp_image: segment 2: paddr=0x00056090 vaddr=0x3ffe8000 size=0x0058c (  1420) load
-[2019-11-11 16:28:25] I (214) esp_image: segment 3: paddr=0x00056624 vaddr=0x40100000 size=0x00a30 (  2608) load
-[2019-11-11 16:28:25] I (221) esp_image: segment 4: paddr=0x0005705c vaddr=0x40100a30 size=0x05610 ( 22032) load
-[2019-11-11 16:28:25] I (236) boot: Loaded app from partition at offset 0x10000
-[2019-11-11 16:28:25] I (257) system_api: Base MAC address is not set, read default base MAC address from EFUSE
-[2019-11-11 16:28:25] I (264) system_api: Base MAC address is not set, read default base MAC address from EFUSE
-[2019-11-11 16:28:25] phy_version: 1153.0, 0398f21, Oct 24 2019, 20:29:07, RTOS new
-[2019-11-11 16:28:25] I (309) phy_init: phy ver: 1153_0
-[2019-11-11 16:28:25] I (312) reset_reason: RTC reset 1 wakeup 0 store 3, reason is 3
-[2019-11-11 16:28:25] I (330) example: Setting WiFi configuration SSID vision...
-[2019-11-11 16:28:25] I (335) example: Waiting for AP connection...
-[2019-11-11 16:28:25] uart echo task process start 
-[2019-11-11 16:28:25]  I (343) example: SYSTEM_EVENT_STA_START
-[2019-11-11 16:28:26] I (2577) wifi: state: 0 -> 2 (b0)
-[2019-11-11 16:28:26] recv data len:10 data is::ssss hellowáb'Üúai´”]øŞ’q¶¤,"™™Kù‹9‘¹í+a‹ù+"òU6·9ŒN–¬©Ú<8sÕÎ‹eò éXè1¯y“}Ì>ØíŒš·r@±P“F{ ŸˆóÃ¥¡ ÜƒLú4»?şşš¥U=z¾Š[§ºŒ“ƒÙú…1)fÛ)à¼
-[2019-11-11 16:28:27] Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
-[2019-11-11 16:28:27] Core 0 register dump:
-[2019-11-11 16:28:27] PC      : 0x40221e92  PS      : 0x00000033  A0      : 0x40221e8f  A1      : 0x3ffecd50  
-[2019-11-11 16:28:27] A2      : 0x00000001  A3      : 0x3ffea644  A4      : 0xffffffff  A5      : 0x00000000  
-[2019-11-11 16:28:27] A6      : 0x00000000  A7      : 0x00000000  A8      : 0x3ffeccd9  A9      : 0x000000a0  
-[2019-11-11 16:28:27] A10     : 0x00000000  A11     : 0x00000000  A12     : 0x00000000  A13     : 0x00000000  
-[2019-11-11 16:28:27] A14     : 0x00000000  A15     : 0x4010836c  SAR     : 0x00000016  EXCCAUSE: 0x0000001c  
-[2019-11-11 16:28:27] 
-[2019-11-11 16:28:27] Backtrace: 0x40221e92:0x3ffecd50 0x4022cd6e:0x3ffecd90 0x4022cd2b:0x3ffecda0 
-[2019-11-11 16:28:27] 	I (2801) wifi: state: 2 -> 0 (0)ørlœØrßŒ#ânÀˆàŒ‚ìpŒ<‚ßì8’ßÇ’ÜälpònnäÄ;ònÄ’Üäbã$‰rrpònàÃÜ€à‚ÇÀl€€€bÀnâãnÀäÇŒbÀÄ¾~ònîÄÁŒl`Ü#‚n€$Œl`¸`rn|’’nÀà’ÜÜl`9~ÄÀÜ#‚nÀ$ŒŒònnîÄÈl`nnàÃÜàrÇâÜÀpp’Ü<ÄÄ8ŒònnîÄÁŒl`nÜÄÃŒrnr’ß;ÄÀ?œŒœ;`ònÀnÜÄÃŒŒ<~ònîÄÈl`nnàÃÜàrÇâÜÄpp’Ü<ÄÇlÛŒpŒònnîÄÁŒl`Ü#‚nÀ;nr’ß;ÄÀŒìrrßÛ’nÀàbÇÇìI (52) boot: ESP-IDF v3.2-220-ga59b346a-dirty 2nd stage bootloader
-[2019-11-11 16:28:27] I (52) boot: compile time 15:17:47
-[2019-11-11 16:28:27] I (54) qio_mode: Enabling default flash chip QIO
-[2019-11-11 16:28:27] I (58) boot: SPI Speed      : 40MHz
-[2019-11-11 16:28:27] I (62) boot: SPI Mode       : QIO
-[2019-11-11 16:28:27] I (66) boot: SPI Flash Size : 2MB
-[2019-11-11 16:28:27] I (70) boot: Partition Table:
-[2019-11-11 16:28:27] I (74) boot: ## Label  
