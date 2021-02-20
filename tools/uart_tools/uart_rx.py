@@ -12,7 +12,7 @@ def recv(serial):
     return data
 
 if __name__ == '__main__':
-    serial = serial.Serial('/dev/ttyUSB4', 115200, timeout=0.5)  #/dev/ttyUSB0
+    serial = serial.Serial('/dev/ttyUSB2', 115200, timeout=0.5)  #/dev/ttyUSB0
     if serial.isOpen() :
         print("open success")
     else :
@@ -27,8 +27,8 @@ if __name__ == '__main__':
         #print("write:"+ data)
         #sleep(2)
         #serial.write(data.encode("gbk")) #数据写回
-        sleep(0.02)
-        rx_data = recv(serial).hex()
-        if rx_data != b'':
+        count=serial.inWaiting()
+        if count != 0:
+            rx_data = serial.read(serial.in_waiting).hex()
             print("read:" + rx_data)
 
